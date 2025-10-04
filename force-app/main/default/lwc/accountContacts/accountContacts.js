@@ -2,7 +2,7 @@ import { LightningElement, api, wire } from 'lwc';
 import getContactsByAccountId from '@salesforce/apex/AccountContactService.getContactsByAccountId';
 
 export default class AccountContacts extends LightningElement {
-    @api recordId; // Account Id passed automatically if placed on Account record page
+    @api recordId;
     contacts;
     error;
 
